@@ -1,0 +1,77 @@
+:root {
+  --dark: #112d4e;
+  --primary: #3f72af;
+  --light: #dbe2ef;
+  --white: #f9f7f7;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  user-select: none;
+}
+div {
+  box-sizing: border-box;
+}
+#wrapper {
+  background: url("./img/doodles.png");
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#question {
+  height: 70%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+}
+#anwserarea {
+  height: 30%;
+  width: 100%;
+  border: var(--dark) solid 3px;
+  position: relative;
+  z-index: 0;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#anwserarea::before {
+  content: "";
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: var(--light);
+}
+.btn {
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(var(--primary), 80%, var(--light));
+  border: var(--dark) solid 3px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.btn:active {
+  background: radial-gradient(lime, 80%, var(--light));
+  border: darkgreen solid 3px;
+  color: darkgreen;
+}
