@@ -1,0 +1,44 @@
+#modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+#modalwindow {
+  width: 80%;
+  height: 80%;
+  border: var(--dark) solid 3px;
+  background-color: var(--light);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#modalwindow > h1 {
+  font-size: 3rem;
+}
+#modalwindow > form {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalwindow > form > * {
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+#modalwindow > form > * > * {
+  font-size: 1.5rem;
+}

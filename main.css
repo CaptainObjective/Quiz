@@ -7,14 +7,14 @@
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   user-select: none;
 }
 div {
   box-sizing: border-box;
 }
 #wrapper {
-  background: url("./img/doodles.png");
+  background: url('./img/doodles.png');
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -44,7 +44,7 @@ div {
   align-items: center;
 }
 #anwserarea::before {
-  content: "";
+  content: '';
   opacity: 0.5;
   height: 100%;
   width: 100%;
