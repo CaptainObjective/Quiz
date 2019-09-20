@@ -8,6 +8,15 @@ module.exports = {
     filename: "bundle.js"
   },
   mode: "production",
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loaders: ["babel-loader"],
+        exclude: /node_modules/
+      }
+    ]
+  },
   resolve: {
     extensions: [".js"]
   }

@@ -1,1 +1,3 @@
-console.log("JS dziala");
+const txt = "JS dziala";
+
+console.log(txt);
