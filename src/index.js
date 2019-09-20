@@ -1,3 +1,4 @@
-const txt = "JS dziala";
+import Game from './Game';
+import startNewGame from './startGame';
 
-console.log(txt);
+const game = new Game(startNewGame());

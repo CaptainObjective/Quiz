@@ -7,6 +7,7 @@ module.exports = {
     publicPath: "/",
     filename: "bundle.js"
   },
+  devtool: "source-maps",
   mode: "production",
   module: {
     rules: [
