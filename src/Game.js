@@ -11,7 +11,6 @@ class Game {
     this.anwserDivs = [...document.querySelectorAll('#anwserarea>div')];
 
     this.anwserDivs.map(el => el.addEventListener('click', e => this.onQuestionAnwser(e)));
-    console.log(this);
     this.askQuestion();
   }
 
