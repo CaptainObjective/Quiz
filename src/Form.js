@@ -47,7 +47,7 @@ class Form {
     );
     // console.log(response);
     new Game(response.data.results);
-    this.element.parentNode.removeChild(this.element);
+    this.element.parentNode && this.element.parentNode.removeChild(this.element);
   }
 }
 

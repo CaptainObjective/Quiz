@@ -11,7 +11,7 @@ class Game {
     this.anwserDivs = [...document.querySelectorAll('#anwserarea>div')];
 
     this.anwserDivs.map(el => el.addEventListener('click', e => this.onQuestionAnwser(e)));
-    console.log(this);
+
     this.askQuestion();
   }
 
@@ -31,7 +31,7 @@ class Game {
   }
   endGame() {
     this.questionDiv.innerHTML = `Congratulations! you responded correctly for ${this.score} out of ${this.questions.length} questions`;
-    // document.querySelector('#anwserarea').innerHTML = ' <div class="btn">Nowa gra</div>';
+
     const newGameDiv = document.createElement('div');
     newGameDiv.innerHTML = 'Once again !';
     newGameDiv.classList.add('btn');
