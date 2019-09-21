@@ -1,3 +1,6 @@
+import axios from 'axios';
+import Game from './Game';
+
 class Form {
   constructor() {
     this.element = document.createElement('div');
@@ -33,13 +36,18 @@ class Form {
     document.querySelector('#wrapper').appendChild(this.element);
     this.element.addEventListener('submit', e => this.submitForm(e));
   }
-  submitForm(e) {
+  async submitForm(e) {
     e.preventDefault();
     // console.log(e.target[0].value, e.target[1].value, e.target[2].value);
     const amount = e.target[0].value;
     const category = e.target[1].value;
     const difficulty = e.target[2].value;
-    console.log(`https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty}`);
+    const response = await axios.get(
+      `https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty}&type=multiple`
+    );
+    // console.log(response);
+    new Game(response.data.results);
+    this.element.parentNode.removeChild(this.element);
   }
 }
 

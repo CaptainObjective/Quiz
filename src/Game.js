@@ -30,10 +30,10 @@ class Game {
     }
   }
   endGame() {
-    this.questionDiv.innerHTML = `Gratulacje! Odpowiedziałeś poprawanie na ${this.score} z ${this.questions.length}`;
+    this.questionDiv.innerHTML = `Congratulations! you responded correctly for ${this.score} out of ${this.questions.length} questions`;
     // document.querySelector('#anwserarea').innerHTML = ' <div class="btn">Nowa gra</div>';
     const newGameDiv = document.createElement('div');
-    newGameDiv.innerHTML = 'Jeszcze raz !';
+    newGameDiv.innerHTML = 'Once again !';
     newGameDiv.classList.add('btn');
     newGameDiv.addEventListener('click', startNewGame);
 
