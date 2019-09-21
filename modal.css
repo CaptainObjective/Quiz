@@ -18,12 +18,13 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 #modalwindow > h1 {
   font-size: 3rem;
+  width: 80%;
+  text-align: center;
 }
 #modalwindow > form {
   height: 80%;
